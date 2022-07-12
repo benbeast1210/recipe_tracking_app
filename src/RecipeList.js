@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RecipeList({ recipes, deleteRecipe }) {
+export default function RecipeList({ recipes, createRecipe, deleteRecipe }) {
 
   //const handleDeleteOnClick = (id) => deleteRecipe(id); 
   function handleDeleteOnClick(index) {

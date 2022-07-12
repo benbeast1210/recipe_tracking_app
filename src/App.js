@@ -17,8 +17,8 @@ export default function App() {
       <header>
         <h1>Delicious Food Recipes</h1>
       </header>
-      <RecipeList recipes={recipes} deleteRecipe={deleteRecipeHandler} />
-      <RecipeCreate createRecipe={createRecipeHandler} />
+      <RecipeList recipes={recipes} createRecipe={createRecipeHandler} deleteRecipe={deleteRecipeHandler} />
+      <RecipeCreate recipes={recipes} createRecipe={createRecipeHandler} />
     </div>
   );
 }

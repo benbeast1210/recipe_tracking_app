@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function RecipeCreate() {
+export default function RecipeCreate({recipes, createRecipe}) {
 
   const initialFormState = {
     name: "",
@@ -12,13 +12,7 @@ export default function RecipeCreate() {
 
   const [formData, setFormData] = useState({ ...initialFormState });
 
-  //const onChange = ({ value, name }) => setFormData({ ...formData, [name]: value });
-  function onChange({ value, name }) {
-    // const value = target.value;
-    // const keyName = target.name;
-
-    setFormData({ ...formData, [name]: value });
-  }
+  const onChange = ({target}) => setFormData({ ...formData, [target.name]: target.value });
 
   const handleSubmit = (event) => {
     event.preventDefault();
