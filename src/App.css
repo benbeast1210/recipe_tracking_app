@@ -2,6 +2,7 @@
 
 .App {
   padding: 1em;
+  color: black;
 }
 
 label {
@@ -19,7 +20,8 @@ html {
   font-family: 'helvetica neue', sans-serif;
 }
 
-thead th, tfoot th {
+thead th, 
+tfoot th {
   font-family: 'Rock Salt';
 }
 
@@ -35,6 +37,12 @@ td {
   font-size: 12px;
   padding: 10px;
   text-align: center;
+}
+
+h1 {
+  font-family: "Playfair Display SC";
+  text-align: center;
+  font-size: 64px;
 }
 
 /* table */
@@ -54,7 +62,34 @@ table {
   text-overflow: ellipsis;
 }
 
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+tr th:nth-child(1),
+tr th:nth-child(2),
+tr th:nth-child(3),
+tr th:nth-child(6),
+tr td:nth-child(1),
+tr td:nth-child(2),
+tr td:nth-child(3),
+tr td:nth-child(6) {
+  width: 10%;
+}
+
+tr th:nth-child(4),
+tr th:nth-child(5),
+tr td:nth-child(4),
+tr td:nth-child(5) {
+  width: 30%;
+}
+
 /* Column Size for thead */
 
-
 /* Column size for tbody */
+
+/* Image  */
+img {
+  object-fit: scale-down;
+  width: 100%;
+}
